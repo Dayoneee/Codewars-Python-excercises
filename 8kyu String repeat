@@ -1,0 +1,5 @@
+def repeat_str(repeat, string):
+    if repeat > 0:
+        return string * repeat
+    else:
+        return ""
