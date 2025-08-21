@@ -1,1 +1,3 @@
 def dna_to_rna(dna):
+        list(dna)
+        return dna.replace("t", "u").replace("T", "U")
