@@ -1,0 +1,10 @@
+def find_average(numbers):
+    total = sum(numbers)
+    dlug = len(numbers)
+    if total == 0:
+        return 0
+    else:
+        average = total / dlug
+    return average
+    
+     
