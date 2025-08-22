@@ -1,0 +1,9 @@
+def fake_bin(x):
+    lista = []
+    for char in x:
+        digit = int(char)
+        if digit < 5:
+            lista.append(0)
+        else:
+            lista.append(1)        
+    return "".join(map(str, lista))

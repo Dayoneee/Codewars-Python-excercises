@@ -1,0 +1,7 @@
+def better_than_average(class_points, your_points):
+    dork = sum(class_points)
+    dark = len(class_points)
+    if dork / dark >= your_points:
+        return False
+    else:
+        return True
