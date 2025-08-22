@@ -1,0 +1,7 @@
+def sort_array(source_array):
+    odd_numbers = sorted([num for num in source_array if num % 2 != 0])
+    odd_iterator = iter(odd_numbers)
+    for i in range(len(source_array)):
+        if source_array[i] % 2 != 0:
+            source_array[i] = next(odd_iterator)
+    return source_array
