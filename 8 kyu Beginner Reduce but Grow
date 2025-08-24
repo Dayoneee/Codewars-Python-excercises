@@ -1,0 +1,6 @@
+def grow(arr):
+    sorted_arr = sorted(arr)
+    result = 1
+    for num in sorted_arr:
+        result *= num
+    return result

@@ -1,2 +1,12 @@
 def high(x):
+    alphabet = {chr(i + 96): i for i in range(1,27)}
+    words = x.split()
+    scores = {}
+    for word in words:
+        word_score = sum(alphabet.get(char, 0) for char in word.lower())
+        scores[word] = word_score
+        highest_word = max(scores, key=scores.get)
+    return highest_word
+    
+    
     
